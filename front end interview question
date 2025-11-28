@@ -1,0 +1,2697 @@
+===============================
+ HTML – Interview Notes (Basic → Advanced)
+===============================
+
+1. What is HTML?
+HTML = HyperText Markup Language. Webpage ka STRUCTURE define karta hai.
+
+2. What is DOCTYPE?
+Browser ko batata hai document type.
+HTML5 = <!DOCTYPE html>
+
+3. What is a Tag?
+HTML building block. Example: <p></p>
+
+4. What is an Element?
+Opening + Content + Closing = Element
+
+5. Block vs Inline Elements
+Block: div, p, h1 → full width leta hai
+Inline: span, a, img → content ke hisaab se width
+
+6. What are Attributes?
+Extra info for tags: <img src="" alt="">
+
+7. Semantic Tags?
+header, nav, main, section, article, aside, footer
+
+8. Why Semantic Tags?
+SEO, Accessibility, Better Structure, Clean Code
+
+9. What is HTML5?
+Latest HTML version with:
+Semantic tags, Audio/Video, Canvas, SVG, localStorage, sessionStorage, WebWorkers, Geolocation, etc.
+
+10. Void Elements
+Tags with no closing tag:
+<br> <hr> <img> <input> <meta> <link>
+
+11. <meta> tag?
+SEO, charset, description, viewport etc.
+
+12. Meta viewport?
+Responsive design:
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+13. <div> vs <span>
+div = block  
+span = inline
+
+14. HTML vs XHTML
+HTML = flexible  
+XHTML = strict, XML based
+
+15. What is <form>?
+User input ke liye form container.
+
+16. Form Validation Attributes
+required, minlength, maxlength, pattern, readonly, disabled
+
+17. Input types
+text, password, email, number, file, date, checkbox, radio
+
+18. Fieldset / Legend
+Form elements ko group karne ke liye.
+
+19. What is iframe?
+Webpage inside webpage.
+
+20. Why iframe not recommended?
+Security risk, performance issue, SEO issue.
+
+21. What is <canvas>?
+Pixel-based drawing → animations, games, charts.
+
+22. What is SVG?
+Vector-based scalable graphics.
+
+23. Canvas vs SVG
+Canvas = pixel, fast animations  
+SVG = vector, quality never lost, DOM support
+
+24. Audio & Video Tags
+<audio controls>  
+<video controls>
+
+25. HTML Storage APIs
+localStorage  
+sessionStorage  
+IndexedDB
+
+26. localStorage vs sessionStorage vs Cookies
+localStorage: 5MB, persistent  
+sessionStorage: 5MB, tab-close se clear  
+cookies: 4KB, server ko bhejte hain
+
+27. What is IndexedDB?
+Browser ka large local database for offline apps.
+
+28. Geolocation API?
+User location fetch karna.
+
+29. Web Worker?
+Background thread → UI freeze nahi hota.
+
+30. Accessibility (A11y)?
+Disabled users ke liye website accessible banana.
+
+31. ARIA?
+Accessibility attributes: aria-label, aria-hidden.
+
+32. tabindex?
+Keyboard navigation order control karta hai.
+
+33. What is SEO?
+Search engine friendly structure – title, meta description, alt attributes.
+
+34. CORS / crossorigin?
+Cross domain resources allow karne ke liye.
+
+35. <picture> tag?
+Responsive images ke liye.
+
+36. Lazy Loading?
+Image/video tab load hoga jab visible ho:
+<img loading="lazy">
+
+37. defer?
+Script background me load + HTML parse ke baad execute.
+
+38. async?
+Script parallel load + turant execute.
+
+39. async vs defer
+async → order maintain nahi  
+defer → order maintain hota hai
+
+40. DOM?
+HTML ka JS object representation (tree structure).
+
+41. Shadow DOM?
+Web components ka private scoped DOM.
+
+42. Custom Elements?
+Custom made HTML tags: <user-card></user-card>
+
+43. Web Components?
+Custom Elements + Shadow DOM + Templates
+
+44. <template> tag?
+Hidden HTML that loads later via JS.
+
+45. contenteditable?
+HTML element ko editable banana:
+<div contenteditable="true">
+
+46. data-* attribute?
+Custom data store karne ke liye:
+<div data-id="10">
+
+47. favicon?
+Website icon:
+<link rel="icon" href="logo.png">
+
+48. HTML Entities?
+Special characters:
+&lt; → <  
+&gt; → >  
+&amp; → &
+
+49. id vs class
+id = unique  
+class = multiple
+
+50. GET vs POST
+GET = data visible in URL  
+POST = data secure, hidden
+
+===============================
+END – Full HTML Notes
+===============================
+
+
+...................................................
+..................................................
+...................................................
+..................................................
+...................................................
+...................................................
+
+
+
+==========================================
+          ⭐ CSS INTERVIEW QUESTIONS ⭐
+      (Complete Guide – Basic to Advanced)
+==========================================
+
+
+
+===========================================
+          ⭐ CSS INTERVIEW NOTES ⭐
+      (Complete | Basic → Intermediate)
+===========================================
+
+1. What is CSS?
+CSS = Cascading Style Sheets → Webpage ke elements ko style/design dene ke liye.
+
+2. Types of CSS
+• Inline CSS → tag ke andar style  
+• Internal CSS → <style> tag  
+• External CSS → separate .css file
+
+3. Inline vs External CSS
+Inline → High priority, messy  
+External → Clean, reusable, best practice
+
+4. What is Box Model?
+Element ka structure: content + padding + border + margin
+
+5. What is Specificity?
+Selectors ka priority order — kaunsa rule apply hoga.
+
+6. CSS Specificity Order
+Inline > ID > Class/Attribute/Pseudo-class > Tag/Pseudo-element > Universal
+
+7. What is Selector?
+Element select karne ka way → tag, class, id, attribute
+
+8. Types of Selectors
+• Universal: *  
+• Type: div, p, h1  
+• Class: .classname  
+• ID: #idname  
+• Attribute: [type="text"]  
+• Pseudo-class: :hover, :focus, :active, :visited  
+• Pseudo-element: ::before, ::after, ::first-letter
+
+9. display: none vs visibility: hidden
+display: none → remove element completely  
+visibility: hidden → hide element but space reserved
+
+10. CSS Position Types
+• static → default, normal flow  
+• relative → relative to its normal position  
+• absolute → relative to nearest positioned ancestor  
+• fixed → relative to viewport, scroll se move nahi hota  
+• sticky → scroll ke saath normal → stick at top/bottom
+
+11. z-index
+Element ke stacking order ko control karta hai  
+Works only on positioned elements (relative, absolute, fixed, sticky)
+
+12. Float & Clear
+float: left | right → element ko left/right align  
+clear: left | right | both → floated element clear
+
+13. Units
+• px → pixels  
+• em → parent font-size  
+• rem → root font-size  
+• % → percentage  
+• vh/vw → viewport height/width
+
+14. CSS Preprocessors
+SASS, SCSS, LESS → Variables, nesting, mixins
+
+15. BEM Naming
+Block__Element--Modifier → clean & scalable CSS
+
+16. CSS Variables
+--primary-color: #000;  
+use → color: var(--primary-color);
+
+17. CSS Animations
+@keyframes + animation property  
+Example: animation: fade 2s infinite;
+
+18. CSS Transitions
+Smooth effect on property change  
+Example: transition: all 0.3s ease;
+
+19. Overflow
+scroll | hidden | auto | visible
+
+20. calc()
+Math inside CSS → width: calc(100% - 50px);
+
+21. object-fit
+Images container me fit → cover | contain | fill
+
+22. Responsive Design
+UI adjusts for screen sizes (mobile, tablet, desktop)
+
+23. Transform
+Move, scale, rotate, skew → transform: translate(10px) scale(1.2)
+
+24. Tailwind vs CSS
+Tailwind → utility-first, fast UI  
+CSS → custom rules, more control
+
+25. Opacity
+Transparency → 0 to 1
+
+26. Cursor
+Mouse pointer → pointer | default | text | crosshair
+
+27. Text Properties
+• line-height → vertical spacing  
+• letter-spacing → characters spacing  
+• white-space → nowrap | pre | normal  
+• word-wrap / overflow-wrap → break long words
+
+28. Shorthand Properties
+Multiple properties ek line me:  
+margin: 10px 20px 30px 40px;  
+padding, border, font, background
+
+29. Vendor Prefix
+Browser specific:  
+-webkit- | -moz- | -ms-
+
+30. !important
+Highest priority rule, use carefully
+
+31. clip-path
+Element shape → circle(), polygon(), ellipse()
+
+32. visibility vs opacity
+visibility: hidden → hidden & unclickable  
+opacity: 0 → hidden but clickable
+
+33. filter & backdrop-filter
+Image/video effect → blur, brightness, grayscale, drop-shadow
+
+34. aspect-ratio
+Width/height ratio control
+
+35. justify-content vs align-items
+justify-content → main-axis (flex/grid)  
+align-items → cross-axis (flex/grid)
+
+36. gap property
+Spacing between flex/grid items (better than margin)
+
+37. Cascade in CSS
+Last rule wins unless specificity higher
+
+38. @import
+External CSS import:  
+@import "style.css";
+
+39. What is Flexbox?
+1D layout system → row/column based alignment  
+Container: display: flex
+
+40. Flexbox Container Properties
+• display: flex  
+• flex-direction: row | column | row-reverse | column-reverse  
+• flex-wrap: nowrap | wrap | wrap-reverse  
+• justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly  
+• align-items: flex-start | flex-end | center | baseline | stretch  
+• align-content: flex-start | flex-end | center | space-between | space-around | stretch  
+• gap: spacing between items
+
+41. Flexbox Item Properties
+• order: number → item order change  
+• flex-grow: number → grow ratio  
+• flex-shrink: number → shrink ratio  
+• flex-basis: size → initial size  
+• flex: shorthand (flex-grow flex-shrink flex-basis)  
+• align-self: auto | flex-start | flex-end | center | baseline | stretch
+
+42. What is CSS Grid?
+2D layout system → row + column based  
+Container: display: grid
+
+43. Grid Container Properties
+• display: grid  
+• grid-template-columns: repeat(3, 1fr)  
+• grid-template-rows: 100px 200px  
+• gap / grid-gap: spacing  
+• justify-items: start | end | center | stretch  
+• align-items: start | end | center | stretch  
+• justify-content: start | end | center | space-between | space-around  
+• align-content: start | end | center | space-between | space-around  
+• grid-auto-flow: row | column | dense
+
+44. Grid Item Properties
+• grid-column: start / end  
+• grid-row: start / end  
+• justify-self: start | end | center | stretch  
+• align-self: start | end | center | stretch
+
+45. Flexbox vs Grid
+Flexbox → 1D (row OR column)  
+Grid → 2D (rows + columns)
+
+46. Media Queries
+Responsive design ke liye breakpoints
+
+47. Common Device Breakpoints (px)
+• Phone (small) → 320px to 480px  
+• Phone (large) → 481px to 767px  
+• Tablet → 768px to 1023px  
+• Laptop / Desktop → 1024px to 1279px  
+• Large Desktop / TV → 1280px and above
+
+48. Syntax – max-width
+@media (max-width: 768px) { 
+    body { font-size: 14px; } 
+}
+
+49. Syntax – min-width
+@media (min-width: 1024px) { 
+    body { font-size: 18px; } 
+}
+
+50. Syntax – min-width & max-width (range)
+@media (min-width: 768px) and (max-width: 1023px) { 
+    body { font-size: 16px; } 
+}
+
+51. Syntax – Orientation
+@media (orientation: landscape) { ... }  
+@media (orientation: portrait) { ... }
+
+52. Syntax – Device type
+@media screen and (max-width: 768px) { ... }  
+@media print { ... }
+
+53. Mobile First Approach
+• Start with base CSS for mobile  
+• Use min-width media queries for larger screens
+
+54. Desktop First Approach
+• Start with base CSS for desktop  
+• Use max-width media queries for smaller screens
+
+55. Multiple Conditions
+@media (min-width: 768px) and (orientation: landscape) { ... }
+
+56. Common Example (Phone)
+@media (max-width: 480px) { 
+    body { font-size: 14px; } 
+    .container { padding: 10px; } 
+}
+
+57. Common Example (Tablet)
+@media (min-width: 481px) and (max-width: 1023px) { 
+    body { font-size: 16px; } 
+    .container { padding: 20px; } 
+}
+
+58. Common Example (Laptop/Desktop)
+@media (min-width: 1024px) { 
+    body { font-size: 18px; } 
+    .container { padding: 40px; } 
+}
+
+===========================================
+       END – COMPLETE CSS NOTES
+===========================================
+
+
+
+
+......................................................
+......................................................
+......................................................
+.....................................................
+......................................................
+......................................................
+......................................................
+
+
+
+
+// ===========================================
+// JAVASCRIPT INTRODUCTION & HISTORY
+// ===========================================
+
+/*
+JavaScript Definition: 
+JavaScript ek programming language hai jo web pages ko interactive banati hai.
+Ye 1995 mein Brendan Eich ne Netscape browser ke liye banayi thi.
+Pehle iska naam Mocha tha, phir LiveScript, aur akhir mein JavaScript rakha gaya.
+
+Use Cases:
+- Web pages interactive banana
+- Form validation
+- Animations create karna
+- Server communication (APIs)
+- Mobile apps (React Native)
+- Desktop apps (Electron)
+
+JavaScript vs Java:
+Donon alag languages hain. Java compiled language hai, JavaScript interpreted.
+*/
+
+// ===========================================
+// 1. JAVASCRIPT FUNDAMENTALS
+// ===========================================
+
+/*
+Variables Definition:
+Variables data store karne ke containers hain. Inme values hold hoti hain.
+
+Use Cases:
+- User data store karna (name, age)
+- Calculations ke results store karna
+- Temporary values hold karna
+*/
+
+// VARIABLE DECLARATION - Data store karne ke containers
+var name = "John";     // Old way - function scoped, hoisted hota hai
+let age = 25;          // Modern way - block scoped, reassign kar sakte hain
+const PI = 3.14;       // Constant - block scoped, reassign nahi kar sakte
+
+/*
+Data Types Definition:
+Data types batate hain ki variable mein kis type ka data store hai.
+
+Primitive Types: Basic data types jo directly store hote hain
+Reference Types: Complex data types jo reference se store hote hain
+*/
+
+// PRIMITIVE DATA TYPES
+let str = "Hello";     // String - Text data store karta hai
+let num = 42;          // Number - Numeric data (integers, decimals)
+let bool = true;       // Boolean - true/false values
+let nullVar = null;    // Null - Empty value intentionally set karna
+let undef;             // Undefined - Variable declared but value not assigned
+let sym = Symbol();    // Symbol - Unique identifier create karna
+let big = 123n;        // BigInt - Very large numbers ke liye
+
+// REFERENCE DATA TYPES
+let obj = {name: "John"};  // Object - Key-value pairs store karta hai
+let arr = [1, 2, 3];       // Array - List of items store karta hai
+let func = function() {};   // Function - Reusable code block
+
+/*
+Type Checking Definition:
+Variable ka data type check karna.
+
+Use Cases:
+- Function mein sahi type ka data aaya hai ya nahi check karna
+- Error handling
+*/
+
+// TYPE CHECKING
+typeof "hello";        // "string" - String type check
+typeof 42;            // "number" - Number type check  
+typeof true;          // "boolean" - Boolean type check
+Array.isArray(arr);   // true - Array check karne ka best way
+
+/*
+Operators Definition:
+Operators calculations aur comparisons ke liye use hote hain.
+
+Use Cases:
+- Mathematical calculations
+- Conditions check karna
+- Logical operations
+*/
+
+// ARITHMETIC OPERATORS - Mathematical calculations
+let sum = 5 + 3;      // 8 - Addition
+let difference = 5 - 3; // 2 - Subtraction  
+let product = 5 * 3;  // 15 - Multiplication
+let quotient = 6 / 2; // 3 - Division
+let remainder = 5 % 2; // 1 - Remainder (modulus)
+let power = 2 ** 3;   // 8 - Exponentiation (2^3)
+
+// COMPARISON OPERATORS - Values compare karna
+console.log("5" == 5);    // true - Loose equality (only value check)
+console.log("5" === 5);   // false - Strict equality (value + type check)
+console.log(5 != "5");    // false - Loose not equal
+console.log(5 !== "5");   // true - Strict not equal
+console.log(5 > 3);       // true - Greater than
+console.log(5 < 3);       // false - Less than
+
+// LOGICAL OPERATORS - Multiple conditions check karna
+console.log(true && false); // AND - Dono true hona chahiye
+console.log(true || false); // OR - Koi ek true hona chahiye  
+console.log(!true);         // NOT - True ko false, false ko true
+
+// TERNARY OPERATOR - Short if-else
+let result = age >= 18 ? "Adult" : "Minor"; // Condition ? true : false
+
+/*
+Type Conversion Definition:
+Ek data type se dusre data type mein convert karna.
+
+Use Cases:
+- User input string ko number mein convert karna
+- Calculations ke liye data types change karna
+*/
+
+// TYPE CONVERSION
+let numStr = "123";
+Number(numStr);      // 123 - String to number
+String(123);         // "123" - Number to string
+Boolean(1);          // true - Truthy value
+Boolean(0);          // false - Falsy value
+
+// TRUTHY/FALSY VALUES
+// Falsy: false, 0, "", null, undefined, NaN
+// Truthy: Everything else (true, 1, "hello", [], {}, etc.)
+
+// ===========================================
+// 2. FUNCTIONS & SCOPE
+// ===========================================
+
+/*
+Functions Definition:
+Functions reusable code blocks hain jo specific task perform karte hain.
+
+Use Cases:
+- Code reuse
+- Complex tasks ko organize karna
+- Event handling
+*/
+
+// FUNCTION DECLARATION - Hoisted (top par move ho jata hai)
+function greet(name) {
+    return `Hello ${name}`;
+}
+
+// FUNCTION EXPRESSION - Variable mein store hota hai
+const greet = function(name) {
+    return `Hello ${name}`;
+};
+
+// ARROW FUNCTION (ES6) - Short syntax, lexical 'this'
+const greet = (name) => `Hello ${name}`;
+
+// IIFE - Immediately Invoked Function Expression
+(function() {
+    console.log("IIFE immediately execute ho jata hai");
+})();
+
+/*
+Higher Order Functions Definition:
+Functions jo dusre functions ko parameter mein lete hain ya return karte hain.
+
+Use Cases:
+- Callback functions
+- Function factories
+- Event listeners
+*/
+
+// HIGHER ORDER FUNCTIONS
+function createMultiplier(multiplier) {
+    return function(x) {
+        return x * multiplier;
+    };
+}
+const double = createMultiplier(2);
+console.log(double(5)); // 10
+
+/*
+Scope Definition:
+Scope batata hai ki variable kahan accessible hai.
+
+Types:
+- Global Scope: Har jagah accessible
+- Function Scope: Function ke andar accessible  
+- Block Scope: Block ({}) ke andar accessible
+*/
+
+// SCOPE EXAMPLES
+var globalVar = "I'm global"; // Har jagah accessible
+
+function testScope() {
+    var functionVar = "I'm in function"; // Function ke andar accessible
+    
+    if (true) {
+        let blockVar = "I'm in block"; // Block ke andar accessible
+        var hoistedVar = "I'm hoisted"; // Function scope (var quirk)
+    }
+}
+
+/*
+Hoisting Definition:
+Variables aur functions declaration top par move ho jate hain.
+
+Use Cases:
+- Code execution samajhna
+- Bugs avoid karna
+*/
+
+// HOISTING EXAMPLES
+console.log(x); // undefined (var hoisted but value nahi)
+var x = 5;
+
+console.log(y); // ReferenceError (let/const not hoisted)
+let y = 10;
+
+// ===========================================
+// 3. ARRAYS & METHODS
+// ===========================================
+
+/*
+Arrays Definition:
+Arrays list of items store karte hain. Har item ka index hota hai.
+
+Use Cases:
+- Multiple items store karna (users, products)
+- Data manipulation
+- Looping through data
+*/
+
+// ARRAY CREATION & ACCESS
+let fruits = ["apple", "banana", "orange"];
+console.log(fruits[0]);     // "apple" - First element (0-based index)
+console.log(fruits.length); // 3 - Total elements count
+
+/*
+Array Methods Definition:
+Predefined functions jo arrays par operations perform karte hain.
+
+Use Cases:
+- Data manipulate karna
+- Search karna
+- Transform karna
+*/
+
+// COMMON ARRAY METHODS
+fruits.push("grape");    // End mein add kare
+fruits.pop();            // End se remove kare  
+fruits.unshift("melon"); // Start mein add kare
+fruits.shift();          // Start se remove kare
+fruits.indexOf("banana"); // 1 - Element ka position bataye
+fruits.includes("apple"); // true - Check kare exists ya nahi
+
+/*
+Array Iteration Methods Definition:
+Methods jo har array element par operation perform karte hain.
+
+Use Cases:
+- Data filtering
+- Data transformation  
+- Data calculation
+*/
+
+// ARRAY ITERATION METHODS
+let numbers = [1, 2, 3, 4, 5];
+
+// map - Har element ko transform kare
+let doubled = numbers.map(num => num * 2); // [2, 4, 6, 8, 10]
+
+// filter - Condition ke hisab se elements select kare
+let even = numbers.filter(num => num % 2 === 0); // [2, 4]
+
+// reduce - Sab elements ko combine kare
+let sum = numbers.reduce((acc, num) => acc + num, 0); // 15
+
+// forEach - Har element par function run kare
+numbers.forEach(num => console.log(num));
+
+// find - Condition match karne wala first element dhundhe
+let found = numbers.find(num => num > 3); // 4
+
+// some - Koi bhi element condition satisfy karta hai ya nahi
+let hasEven = numbers.some(num => num % 2 === 0); // true
+
+// every - Sab elements condition satisfy karte hain ya nahi
+let allEven = numbers.every(num => num % 2 === 0); // false
+
+// ===========================================
+// 4. OBJECTS & PROTOTYPES
+// ===========================================
+
+/*
+Objects Definition:
+Objects key-value pairs store karte hain. Real-world entities represent karte hain.
+
+Use Cases:
+- User data store karna
+- Configuration settings
+- Complex data structures
+*/
+
+// OBJECT CREATION
+let person = {
+    name: "John",
+    age: 30,
+    greet: function() {
+        return `Hello, I'm ${this.name}`;
+    }
+};
+
+// ACCESS PROPERTIES
+console.log(person.name);       // Dot notation - Direct access
+console.log(person["age"]);     // Bracket notation - Dynamic keys
+
+/*
+ES6 Object Features Definition:
+Modern JavaScript features jo objects ko powerful banate hain.
+
+Use Cases:
+- Dynamic property names
+- Shorter method syntax
+*/
+
+// ES6 FEATURES
+let key = "dynamicKey";
+let obj = {
+    [key]: "value",           // Computed property names
+    shorthandMethod() {       // Method shorthand
+        return "Hello";
+    }
+};
+
+/*
+Object Methods Definition:
+Built-in functions jo objects par operations perform karte hain.
+
+Use Cases:
+- Object manipulation
+- Data extraction
+- Copying objects
+*/
+
+// OBJECT METHODS
+console.log(Object.keys(person));    // ["name", "age"] - All keys
+console.log(Object.values(person));  // ["John", 30] - All values  
+console.log(Object.entries(person)); // [["name", "John"], ["age", 30]] - Key-value pairs
+
+// COPYING OBJECTS
+let clone = Object.assign({}, person); // Shallow copy
+let spreadClone = {...person};         // Spread operator copy
+
+/*
+Prototypes Definition:
+Prototypes JavaScript mein inheritance provide karte hain.
+
+Use Cases:
+- Methods share karna between objects
+- Memory efficient code
+*/
+
+// PROTOTYPES
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+// Prototype mein method add karna
+Person.prototype.greet = function() {
+    return `Hello, I'm ${this.name}`;
+};
+
+// Instance create karna
+let john = new Person("John", 30);
+console.log(john.greet()); // "Hello, I'm John"
+
+// ===========================================
+// 5. ES6 CLASSES
+// ===========================================
+
+/*
+Classes Definition:
+Classes object-oriented programming provide karti hain. Constructor functions ka modern syntax.
+
+Use Cases:
+- Complex objects create karna
+- Inheritance implement karna
+- Code organization
+*/
+
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    
+    // INSTANCE METHOD - Har object ke paas
+    greet() {
+        return `Hello, I'm ${this.name}`;
+    }
+    
+    // STATIC METHOD - Class ke paas, object ke paas nahi
+    static species() {
+        return "Homo sapiens";
+    }
+    
+    // GETTER - Property ki tarah use kare
+    get description() {
+        return `${this.name} is ${this.age} years old`;
+    }
+    
+    // SETTER - Property ki tarah assign kare  
+    set updateAge(newAge) {
+        if (newAge > 0) {
+            this.age = newAge;
+        }
+    }
+}
+
+/*
+Inheritance Definition:
+Child class parent class se properties aur methods inherit karti hai.
+
+Use Cases:
+- Code reuse
+- Hierarchical relationships
+*/
+
+// INHERITANCE
+class Student extends Person {
+    constructor(name, age, grade) {
+        super(name, age); // Parent constructor call kare
+        this.grade = grade;
+    }
+    
+    study() {
+        return `${this.name} is studying`;
+    }
+}
+
+// USAGE
+let student = new Student("Alice", 20, "A");
+console.log(student.greet());  // "Hello, I'm Alice" (inherited)
+console.log(student.study());  // "Alice is studying" (own method)
+console.log(Person.species()); // "Homo sapiens" (static method)
+
+// ===========================================
+// 6. ASYNCHRONOUS JAVASCRIPT
+// ===========================================
+
+/*
+Asynchronous JavaScript Definition:
+Code jo background mein run hota hai, page block nahi hota.
+
+Use Cases:
+- API calls
+- File operations
+- Timers
+*/
+
+/*
+Callbacks Definition:
+Functions jo dusre function ke complete hone par call hote hain.
+
+Use Cases:
+- Async operations
+- Event handling
+*/
+
+// CALLBACKS
+function fetchData(callback) {
+    setTimeout(() => {
+        callback("Data received");
+    }, 1000);
+}
+
+// Callback Hell (Pyramid of Doom) - Nested callbacks
+fetchData(function(data1) {
+    processData(data1, function(data2) {
+        saveData(data2, function(data3) {
+            console.log("Done:", data3);
+        });
+    });
+});
+
+/*
+Promises Definition:
+Promises future value represent karte hain. Async operations ka result.
+
+Use Cases:
+- API requests
+- File reading
+- Database operations
+*/
+
+// PROMISES
+const promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        Math.random() > 0.5 ? resolve("Success") : reject("Error");
+    }, 1000);
+});
+
+promise
+    .then(result => {
+        console.log(result);
+        return "Next step";
+    })
+    .then(nextResult => {
+        console.log(nextResult);
+    })
+    .catch(error => {
+        console.error("Error:", error);
+    })
+    .finally(() => {
+        console.log("Cleanup"); // Always execute hoga
+    });
+
+// PROMISE METHODS
+Promise.all([promise1, promise2]);     // Sab promises complete hone ka wait kare
+Promise.race([promise1, promise2]);    // Jo pehle complete ho use le
+
+/*
+Async/Await Definition:
+Promises ka readable syntax. Code synchronous dikhta hai but async work karta hai.
+
+Use Cases:
+- Multiple API calls
+- Error handling in async code
+- Readable async code
+*/
+
+// ASYNC/AWAIT
+async function fetchUser() {
+    try {
+        const response = await fetch('/api/user'); // Wait kare promise resolve hone ka
+        if (!response.ok) throw new Error('Network error');
+        const user = await response.json(); // Wait kare data parse hone ka
+        return user;
+    } catch (error) {
+        console.error("Error:", error);
+        throw error; // Re-throw error
+    }
+}
+
+// Multiple async operations
+async function fetchMultiple() {
+    const [user, posts] = await Promise.all([
+        fetchUser(),
+        fetchPosts()
+    ]);
+    return {user, posts};
+}
+
+// ===========================================
+// 7. CLOSURES & THIS KEYWORD
+// ===========================================
+
+/*
+Closures Definition:
+Function apne surrounding variables ko remember karta hai, even after execution complete.
+
+Use Cases:
+- Data privacy
+- Function factories
+- Event handlers
+*/
+
+// CLOSURES
+function createCounter() {
+    let count = 0; // Private variable
+    
+    return {
+        increment: function() {
+            count++;
+            return count;
+        },
+        decrement: function() {
+            count--;
+            return count;
+        },
+        getCount: function() {
+            return count;
+        }
+    };
+}
+
+const counter = createCounter();
+console.log(counter.increment()); // 1
+console.log(counter.getCount());  // 1
+
+// Practical Example: Module Pattern
+const Calculator = (function() {
+    let memory = 0; // Private variable
+    
+    function add(a, b) {
+        return a + b;
+    }
+    
+    return {
+        add: add,
+        store: function(value) { memory = value; },
+        recall: function() { return memory; }
+    };
+})();
+
+/*
+this Keyword Definition:
+this keyword current execution context batata hai.
+
+Use Cases:
+- Object methods
+- Event handlers
+- Constructor functions
+*/
+
+// THIS KEYWORD EXAMPLES
+// 1. Global context
+console.log(this); // Window (browser)
+
+// 2. Method context
+const obj = {
+    name: "John",
+    greet: function() {
+        console.log(this.name); // "John" (object itself)
+    }
+};
+
+// 3. Constructor context  
+function Person(name) {
+    this.name = name; // New object
+}
+
+// 4. Arrow function (lexical this - surrounding scope se leta hai)
+const obj2 = {
+    name: "Jane",
+    greet: () => {
+        console.log(this.name); // undefined (window se leta hai)
+    },
+    delayedGreet: function() {
+        setTimeout(() => {
+            console.log(this.name); // "Jane" (arrow function preserves this)
+        }, 1000);
+    }
+};
+
+// 5. Explicit binding - this manually set kare
+function greet() {
+    console.log(this.name);
+}
+const person = {name: "John"};
+greet.call(person);    // "John" - immediately call
+greet.apply(person);   // "John" - immediately call with array arguments
+const boundGreet = greet.bind(person); // "John" - new function return kare
+boundGreet();
+
+// ===========================================
+// 8. ES6+ MODERN FEATURES
+// ===========================================
+
+/*
+Destructuring Definition:
+Arrays/objects se values extract karna easily.
+
+Use Cases:
+- Function parameters
+- API responses
+- Configuration objects
+*/
+
+// DESTRUCTURING
+// Array Destructuring
+const [first, second, ...rest] = [1, 2, 3, 4, 5];
+// first=1, second=2, rest=[3,4,5]
+
+// Object Destructuring  
+const {name, age, ...others} = {name: "John", age: 30, city: "NY"};
+// name="John", age=30, others={city: "NY"}
+
+// Function Parameter Destructuring
+function printUser({name, age}) {
+    console.log(`${name} is ${age} years old`);
+}
+
+// Default Values
+const {name = "Anonymous", age = 0} = someObject;
+
+/*
+Spread & Rest Operators Definition:
+Spread elements expand karta hai, Rest multiple elements ko combine karta hai.
+
+Use Cases:
+- Array/object copying
+- Function arguments
+- Merging data
+*/
+
+// SPREAD & REST OPERATORS
+// Spread Operator (...) - Elements expand kare
+const arr1 = [1, 2, 3];
+const arr2 = [...arr1, 4, 5]; // [1, 2, 3, 4, 5]
+
+const obj1 = {a: 1, b: 2};
+const obj2 = {...obj1, c: 3}; // {a: 1, b: 2, c: 3}
+
+// Rest Parameters - Multiple parameters ko array me convert kare
+function sum(...numbers) {
+    return numbers.reduce((acc, num) => acc + num, 0);
+}
+sum(1, 2, 3, 4); // 10
+
+// Rest in Destructuring
+const [first, ...others] = [1, 2, 3, 4];
+
+/*
+Template Literals Definition:
+String interpolation aur multi-line strings ke liye.
+
+Use Cases:
+- Dynamic strings
+- HTML templates
+- Multi-line text
+*/
+
+// TEMPLATE LITERALS
+const name = "John";
+const age = 30;
+
+// Basic usage
+const message = `Hello ${name}! 
+You are ${age} years old.`;
+
+// Expressions
+const calculation = `2 + 2 = ${2 + 2}`;
+
+// Tagged Templates - Custom string processing
+function highlight(strings, ...values) {
+    return strings.reduce((result, str, i) => {
+        return result + str + (values[i] ? `<mark>${values[i]}</mark>` : '');
+    }, '');
+}
+
+const highlighted = highlight`Hello ${name}, you are ${age} years old`;
+
+// ===========================================
+// 9. ERROR HANDLING
+// ===========================================
+
+/*
+Error Handling Definition:
+Errors ko gracefully handle karna application crash hone se bachata hai.
+
+Use Cases:
+- Network requests
+- User input validation
+- File operations
+*/
+
+// BASIC TRY-CATCH
+try {
+    // Code that might throw error
+    throw new Error("Something went wrong");
+} catch (error) {
+    console.error("Error:", error.message);
+} finally {
+    console.log("This always executes"); // Cleanup code
+}
+
+/*
+Custom Errors Definition:
+Apne specific errors create karna.
+
+Use Cases:
+- Specific error types
+- Better error messages
+- Error categorization
+*/
+
+// CUSTOM ERROR CLASSES
+class ValidationError extends Error {
+    constructor(message, field) {
+        super(message);
+        this.name = "ValidationError";
+        this.field = field;
+    }
+}
+
+// USAGE
+function validateUser(user) {
+    if (!user.name) {
+        throw new ValidationError("Name is required", "name");
+    }
+}
+
+try {
+    validateUser({});
+} catch (error) {
+    if (error instanceof ValidationError) {
+        console.log(`Field ${error.field}: ${error.message}`);
+    }
+}
+
+// ERROR HANDLING IN PROMISES
+fetch('/api/data')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    })
+    .catch(error => {
+        console.error('Fetch error:', error);
+    });
+
+// ===========================================
+// 10. DOM MANIPULATION
+// ===========================================
+
+/*
+DOM Definition:
+DOM (Document Object Model) HTML elements ka tree structure representation hai.
+
+Use Cases:
+- Dynamic content update
+- User interactions
+- Form handling
+*/
+
+// DOM SELECTION METHODS
+// Selecting Single Elements
+document.getElementById('myId');           // ID se select kare
+document.querySelector('.myClass');        // CSS selector se select kare
+
+// Selecting Multiple Elements  
+document.getElementsByClassName('myClass'); // Class se select kare
+document.getElementsByTagName('div');       // Tag name se select kare
+document.querySelectorAll('.myClass');      // CSS selector se sab select kare
+
+/*
+DOM Traversal Definition:
+Selected element ke around move karna.
+
+Use Cases:
+- Navigation between elements
+- Finding related elements
+*/
+
+// TRAVERSING DOM
+const element = document.querySelector('.child');
+element.parentElement;        // Parent element
+element.children;             // Child elements
+element.nextElementSibling;   // Next sibling
+element.previousElementSibling; // Previous sibling
+
+/*
+DOM Manipulation Definition:
+HTML elements create, modify, delete karna.
+
+Use Cases:
+- Dynamic content
+- User interfaces
+- Interactive elements
+*/
+
+// CREATING ELEMENTS
+const newDiv = document.createElement('div');
+const newText = document.createTextNode('Hello World');
+
+// ADDING TO DOM
+parentElement.appendChild(newDiv);
+parentElement.insertBefore(newDiv, referenceElement);
+
+// MODIFYING ELEMENTS
+element.innerHTML = '<strong>Bold</strong>'; // HTML parse kare
+element.textContent = 'Plain text';          // Text only
+element.innerText = 'Styled text';           // Styled text
+
+// ATTRIBUTES & CLASSES
+element.setAttribute('id', 'newId');
+element.getAttribute('id');
+element.removeAttribute('id');
+
+element.classList.add('active');
+element.classList.remove('active'); 
+element.classList.toggle('active');
+element.classList.contains('active');
+
+// STYLES
+element.style.color = 'red';
+element.style.fontSize = '16px';
+element.style.display = 'none';
+
+/*
+Events Definition:
+User interactions handle karna (clicks, typing, etc.)
+
+Use Cases:
+- Button clicks
+- Form submissions
+- Keyboard events
+*/
+
+// EVENT HANDLING
+element.addEventListener('click', function(event) {
+    console.log('Clicked!', event.target);
+});
+
+// EVENT OBJECT PROPERTIES
+event.target;        // Element that triggered event
+event.currentTarget; // Element that has event listener
+event.type;          // Event type ('click')
+event.preventDefault(); // Prevent default behavior (form submit, link follow)
+event.stopPropagation(); // Stop event bubbling
+
+// COMMON EVENTS
+'click', 'dblclick', 'mouseenter', 'mouseleave', 
+'keydown', 'keyup', 'keypress', 'submit', 'change',
+'input', 'focus', 'blur', 'load', 'resize', 'scroll'
+
+/*
+Event Delegation Definition:
+Parent par listener lagake child events handle karna.
+
+Use Cases:
+- Dynamic elements
+- Performance improvement
+- Multiple similar elements
+*/
+
+// EVENT DELEGATION
+document.getElementById('parent').addEventListener('click', function(e) {
+    if (e.target.matches('button.child')) {
+        console.log('Child button clicked:', e.target.textContent);
+    }
+});
+
+// REMOVING EVENTS
+function handleClick() { console.log('Clicked'); }
+element.addEventListener('click', handleClick);
+element.removeEventListener('click', handleClick);
+
+// ===========================================
+// 11. EVENT LOOP & ASYNC PATTERNS
+// ===========================================
+
+/*
+Event Loop Definition:
+JavaScript runtime mechanism hai jo asynchronous code ko handle karta hai.
+
+How it works:
+1. Call Stack: Current executing functions
+2. Web APIs: Browser provided APIs (setTimeout, fetch)
+3. Callback Queue: Async callbacks wait karte hain
+4. Event Loop: Check karta hai call stack khali hai, phir queue se call stack mein le jata hai
+*/
+
+// EVENT LOOP MECHANISM
+console.log('Start'); // 1. Call Stack
+
+setTimeout(() => {
+    console.log('Timeout callback'); // 4. Callback Queue -> Call Stack
+}, 0);
+
+Promise.resolve().then(() => {
+    console.log('Promise callback'); // 3. Microtask Queue -> Call Stack
+});
+
+console.log('End'); // 2. Call Stack
+
+// Output Order:
+// Start
+// End
+// Promise callback (Microtask - higher priority)
+// Timeout callback (Macrotask - lower priority)
+
+/*
+Microtasks vs Macrotasks Definition:
+Different types of async tasks with different priorities.
+
+Use Cases:
+- Understanding execution order
+- Performance optimization
+*/
+
+// MICROTASKS vs MACROTASKS
+// Microtasks (higher priority)
+Promise callbacks
+queueMicrotask()
+MutationObserver
+
+// Macrotasks (lower priority)  
+setTimeout, setInterval
+setImmediate (Node.js)
+I/O operations
+UI rendering
+
+// EXECUTION ORDER EXAMPLE
+console.log('Script start'); // 1
+
+setTimeout(() => {
+    console.log('setTimeout'); // 4
+}, 0);
+
+Promise.resolve().then(() => {
+    console.log('Promise 1'); // 2
+}).then(() => {
+    console.log('Promise 2'); // 3
+});
+
+console.log('Script end'); // 1
+
+// Output:
+// Script start
+// Script end
+// Promise 1
+// Promise 2
+// setTimeout
+
+/*
+Debouncing & Throttling Definition:
+Performance optimization techniques for frequent events.
+
+Debouncing: Execute after pause (search boxes)
+Throttling: Execute at most once per interval (scroll events)
+*/
+
+// DEBOUNCING - Execute after pause
+function debounce(func, delay) {
+    let timeoutId;
+    return function(...args) {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => {
+            func.apply(this, args);
+        }, delay);
+    };
+}
+
+// THROTTLING - Execute at most once per interval
+function throttle(func, delay) {
+    let lastCall = 0;
+    return function(...args) {
+        const now = Date.now();
+        if (now - lastCall >= delay) {
+            lastCall = now;
+            func.apply(this, args);
+        }
+    };
+}
+
+// PRACTICAL USAGE
+const searchInput = document.getElementById('search');
+const expensiveSearch = debounce(function(query) {
+    // API call or heavy computation
+    console.log('Searching for:', query);
+}, 300);
+
+searchInput.addEventListener('input', (e) => {
+    expensiveSearch(e.target.value);
+});
+
+// WINDOW RESIZE WITH THROTTLE
+const handleResize = throttle(function() {
+    console.log('Window resized:', window.innerWidth);
+}, 200);
+
+window.addEventListener('resize', handleResize);
+
+// ===========================================
+// 12. BROWSER STORAGE
+// ===========================================
+
+/*
+Browser Storage Definition:
+Data client-side store karna browser mein.
+
+Use Cases:
+- User preferences
+- Authentication tokens
+- Caching data
+*/
+
+/*
+localStorage Definition:
+Persistent storage - tab close karne par bhi data rahega.
+
+Use Cases:
+- User settings
+- Theme preferences
+- Persistent data
+*/
+
+// LOCALSTORAGE
+localStorage.setItem('user', JSON.stringify({name: 'John', age: 30}));
+const user = JSON.parse(localStorage.getItem('user'));
+localStorage.removeItem('user');
+localStorage.clear();
+
+/*
+sessionStorage Definition:
+Session-only storage - tab close par data delete ho jata hai.
+
+Use Cases:
+- Temporary data
+- Form data
+- Session-specific data
+*/
+
+// SESSIONSTORAGE
+sessionStorage.setItem('token', 'abc123');
+const token = sessionStorage.getItem('token');
+
+/*
+Storage Events Definition:
+Cross-tab communication - different tabs mein storage changes detect karna.
+
+Use Cases:
+- Multi-tab applications
+- Real-time updates
+*/
+
+// STORAGE EVENT
+window.addEventListener('storage', (event) => {
+    console.log('Storage changed:', event.key, event.newValue);
+});
+
+/*
+Cookies Definition:
+Small data jo server tak automatically send hota hai.
+
+Use Cases:
+- Authentication
+- Tracking
+- Session management
+*/
+
+// COOKIES
+function setCookie(name, value, days) {
+    const expires = new Date();
+    expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
+    document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
+}
+
+function getCookie(name) {
+    const nameEQ = name + "=";
+    const cookies = document.cookie.split(';');
+    for (let cookie of cookies) {
+        while (cookie.charAt(0) === ' ') {
+            cookie = cookie.substring(1);
+        }
+        if (cookie.indexOf(nameEQ) === 0) {
+            return cookie.substring(nameEQ.length);
+        }
+    }
+    return null;
+}
+
+// USAGE
+setCookie('theme', 'dark', 7);
+const theme = getCookie('theme');
+
+// ===========================================
+// 13. WEB APIs
+// ===========================================
+
+/*
+Web APIs Definition:
+Browser built-in APIs jo powerful functionality provide karte hain.
+
+Use Cases:
+- Network requests
+- Geolocation
+- File access
+*/
+
+/*
+Fetch API Definition:
+Modern way to make HTTP requests.
+
+Use Cases:
+- API calls
+- Data fetching
+- File uploads
+*/
+
+// FETCH API
+// GET Request
+async function fetchData(url) {
+    try {
+        const response = await fetch(url, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + token
+            }
+        });
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Fetch error:', error);
+        throw error;
+    }
+}
+
+// POST Request
+async function postData(url, data) {
+    const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data)
+    });
+    return response.json();
+}
+
+/*
+Geolocation API Definition:
+User's current location get karna.
+
+Use Cases:
+- Location-based services
+- Maps
+- Local recommendations
+*/
+
+// GEOLOCATION API
+function getLocation() {
+    return new Promise((resolve, reject) => {
+        if (!navigator.geolocation) {
+            reject(new Error('Geolocation not supported'));
+        }
+        
+        navigator.geolocation.getCurrentPosition(
+            position => {
+                resolve({
+                    latitude: position.coords.latitude,
+                    longitude: position.coords.longitude,
+                    accuracy: position.coords.accuracy
+                });
+            },
+            error => {
+                reject(error);
+            },
+            {
+                enableHighAccuracy: true,
+                timeout: 10000,
+                maximumAge: 60000
+            }
+        );
+    });
+}
+
+// USAGE
+getLocation()
+    .then(location => {
+        console.log('Location:', location);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+
+/*
+Intersection Observer Definition:
+Elements ki visibility track karna.
+
+Use Cases:
+- Lazy loading
+- Infinite scroll
+- Animation triggers
+*/
+
+// INTERSECTION OBSERVER
+// Lazy Loading Images
+const lazyImages = document.querySelectorAll('img[data-src]');
+
+const imageObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const img = entry.target;
+            img.src = img.dataset.src;
+            img.classList.remove('lazy');
+            imageObserver.unobserve(img);
+        }
+    });
+});
+
+lazyImages.forEach(img => imageObserver.observe(img));
+
+// INFINITE SCROLL
+const sentinel = document.getElementById('sentinel');
+const content = document.getElementById('content');
+
+const scrollObserver = new IntersectionObserver(async (entries) => {
+    if (entries[0].isIntersecting) {
+        // Load more content
+        const newContent = await loadMoreContent();
+        content.appendChild(newContent);
+    }
+});
+
+scrollObserver.observe(sentinel);
+
+// ===========================================
+// 14. PERFORMANCE OPTIMIZATION
+// ===========================================
+
+/*
+Performance Optimization Definition:
+Code optimize karna better user experience ke liye.
+
+Use Cases:
+- Faster loading
+- Smooth interactions
+- Better SEO
+*/
+
+/*
+Memory Management Definition:
+Efficient memory usage aur leaks avoid karna.
+
+Use Cases:
+- Large applications
+- Long-running apps
+- Mobile devices
+*/
+
+// MEMORY MANAGEMENT
+// 1. Avoid Memory Leaks
+function createLeak() {
+    const element = document.getElementById('myElement');
+    // DOM element memory me retained rahega
+    element.addEventListener('click', () => {
+        console.log(element.id);
+    });
+}
+
+// Better approach
+function noLeak() {
+    const element = document.getElementById('myElement');
+    const id = element.id; // Only needed data store kare
+    
+    element.addEventListener('click', () => {
+        console.log(id); // No DOM reference
+    });
+}
+
+// 2. Efficient DOM Updates
+// Bad: Multiple reflows (browser repaint)
+for (let i = 0; i < 100; i++) {
+    document.body.innerHTML += `<div>Item ${i}</div>`;
+}
+
+// Good: Single update
+const fragment = document.createDocumentFragment();
+for (let i = 0; i < 100; i++) {
+    const div = document.createElement('div');
+    div.textContent = `Item ${i}`;
+    fragment.appendChild(div);
+}
+document.body.appendChild(fragment);
+
+/*
+Lazy Loading Definition:
+Content load karna only when needed.
+
+Use Cases:
+- Images
+- Code splitting
+- Large datasets
+*/
+
+// LAZY LOADING & CODE SPLITTING
+// Dynamic Imports (Code Splitting)
+const loadModule = async () => {
+    try {
+        const module = await import('./heavyModule.js');
+        module.initialize();
+    } catch (error) {
+        console.error('Failed to load module:', error);
+    }
+};
+
+// Lazy Load Images
+const lazyLoad = (target) => {
+    const io = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.dataset.src;
+                img.classList.add('loaded');
+                observer.unobserve(img);
+            }
+        });
+    });
+    
+    io.observe(target);
+};
+
+document.querySelectorAll('img[data-src]').forEach(lazyLoad);
+
+// ===========================================
+// 15. SECURITY BEST PRACTICES
+// ===========================================
+
+/*
+Security Definition:
+Web applications ko attacks se protect karna.
+
+Use Cases:
+- User data protection
+- Preventing attacks
+- Secure authentication
+*/
+
+/*
+XSS Prevention Definition:
+Cross-site scripting attacks se bachna.
+
+Use Cases:
+- User input handling
+- Dynamic content
+*/
+
+// XSS PREVENTION
+// 1. Input Sanitization
+function sanitizeHTML(str) {
+    const div = document.createElement('div');
+    div.textContent = str; // HTML encode kare
+    return div.innerHTML;
+}
+
+// 2. Safe Content Insertion
+function safeInsert(container, content) {
+    container.textContent = content; // innerHTML ki jagah
+}
+
+// 3. Using Content Security Policy (CSP)
+// HTML me: <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+
+/*
+CSRF Protection Definition:
+Cross-site request forgery attacks se bachna.
+
+Use Cases:
+- Form submissions
+- API requests
+- State-changing operations
+*/
+
+// CSRF PROTECTION
+// 1. Using CSRF Tokens
+function getCSRFToken() {
+    return document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+}
+
+// 2. Include token in requests
+fetch('/api/data', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-Token': getCSRFToken()
+    },
+    body: JSON.stringify(data)
+});
+
+// 3. SameSite Cookies
+// Set cookies with SameSite attribute
+document.cookie = "session=abc123; SameSite=Strict";
+
+// ===========================================
+// 16. COMMON INTERVIEW PROBLEMS
+// ===========================================
+
+/*
+Interview Problems Definition:
+Common coding problems jo interviews mein poche jate hain.
+
+Use Cases:
+- Problem-solving skills
+- JavaScript knowledge
+- Coding ability
+*/
+
+// 1. REVERSE A STRING
+function reverseString(str) {
+    // Method 1: Using built-in methods
+    return str.split('').reverse().join('');
+    
+    // Method 2: Using loop
+    let reversed = '';
+    for (let i = str.length - 1; i >= 0; i--) {
+        reversed += str[i];
+    }
+    return reversed;
+    
+    // Method 3: Using reduce
+    return str.split('').reduce((rev, char) => char + rev, '');
+}
+
+// 2. PALINDROME CHECK
+function isPalindrome(str) {
+    const cleanStr = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+    return cleanStr === cleanStr.split('').reverse().join('');
+}
+
+// 3. FIZZBUZZ
+function fizzBuzz(n) {
+    for (let i = 1; i <= n; i++) {
+        if (i % 15 === 0) console.log("FizzBuzz");
+        else if (i % 3 === 0) console.log("Fizz");
+        else if (i % 5 === 0) console.log("Buzz");
+        else console.log(i);
+    }
+}
+
+// 4. FIND MAXIMUM IN ARRAY
+function findMax(arr) {
+    // Method 1: Using Math.max with spread
+    return Math.max(...arr);
+    
+    // Method 2: Using reduce
+    return arr.reduce((max, num) => num > max ? num : max, arr[0]);
+    
+    // Method 3: Using loop
+    let max = arr[0];
+    for (let num of arr) {
+        if (num > max) max = num;
+    }
+    return max;
+}
+
+// 5. REMOVE DUPLICATES FROM ARRAY
+function removeDuplicates(arr) {
+    // Method 1: Using Set
+    return [...new Set(arr)];
+    
+    // Method 2: Using filter
+    return arr.filter((item, index) => arr.indexOf(item) === index);
+    
+    // Method 3: Using reduce
+    return arr.reduce((unique, item) => {
+        return unique.includes(item) ? unique : [...unique, item];
+    }, []);
+}
+
+// 6. FACTORIAL
+function factorial(n) {
+    // Method 1: Recursive
+    if (n <= 1) return 1;
+    return n * factorial(n - 1);
+    
+    // Method 2: Iterative
+    let result = 1;
+    for (let i = 2; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+}
+
+// 7. FIBONACCI
+function fibonacci(n) {
+    // Method 1: Recursive (inefficient for large n)
+    if (n <= 1) return n;
+    return fibonacci(n - 1) + fibonacci(n - 2);
+    
+    // Method 2: Iterative (efficient)
+    if (n <= 1) return n;
+    let a = 0, b = 1;
+    for (let i = 2; i <= n; i++) {
+        [a, b] = [b, a + b];
+    }
+    return b;
+}
+
+// 8. DEEP CLONE OBJECT
+function deepClone(obj, hash = new WeakMap()) {
+    // Handle primitives and null
+    if (obj === null || typeof obj !== 'object') {
+        return obj;
+    }
+    
+    // Handle circular references
+    if (hash.has(obj)) {
+        return hash.get(obj);
+    }
+    
+    // Handle Date
+    if (obj instanceof Date) {
+        return new Date(obj);
+    }
+    
+    // Handle Array
+    if (Array.isArray(obj)) {
+        const clone = [];
+        hash.set(obj, clone);
+        obj.forEach((item, index) => {
+            clone[index] = deepClone(item, hash);
+        });
+        return clone;
+    }
+    
+    // Handle Object
+    if (obj instanceof Object) {
+        const clone = Object.create(Object.getPrototypeOf(obj));
+        hash.set(obj, clone);
+        
+        for (let key in obj) {
+            if (obj.hasOwnProperty(key)) {
+                clone[key] = deepClone(obj[key], hash);
+            }
+        }
+        return clone;
+    }
+}
+
+// ===========================================
+// END OF COMPLETE JAVASCRIPT GUIDE
+// ===========================================
+
+/*
+Final Notes:
+Ye complete JavaScript guide hai jo basic se advanced tak cover karti hai.
+Har concept ke saath definition, use cases, aur practical examples diye gaye hain.
+
+Key Topics Covered:
+1. JavaScript Fundamentals
+2. Functions & Scope
+3. Arrays & Objects  
+4. ES6 Classes
+5. Asynchronous JavaScript
+6. DOM Manipulation
+7. Browser APIs
+8. Performance & Security
+9. Common Interview Problems
+
+Use this guide for:
+- Interview preparation
+- Learning JavaScript
+- Reference during development
+- Understanding core concepts
+*/
+
+console.log("JavaScript Guide Complete! 🎉");
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// =============================================
+// REACT.JS COMPLETE INTERVIEW GUIDE
+// =============================================
+
+/*
+📚 1. REACT INTRODUCTION & DEFINITION
+*/
+// React ek JavaScript library hai jo user interfaces banane ke liye use hoti hai
+// Yeh Facebook ne 2013 mein develop ki thi
+// React component-based architecture use karti hai
+// Virtual DOM use karti hai jisse performance better hoti hai
+// React mein data flow unidirectional hota hai (parent se child mein)
+
+/*
+🎯 2. JSX (JAVASCRIPT XML)
+*/
+// JSX ek syntax extension hai jo JavaScript mein HTML-like code likhne deta hai
+// JSX compile hone ke baad pure JavaScript ban jata hai
+const element = <h1>Hello, World!</h1>; // Basic JSX
+
+const name = 'John';
+const greeting = <h1>Hello, {name}!</h1>; // JSX with expressions
+
+const divElement = <div className="container">Content</div>; // JSX with attributes
+
+// Multiple elements return karne ke liye Fragment use karte hain
+const multipleElements = (
+  <React.Fragment>
+    <h1>Title</h1>
+    <p>Paragraph</p>
+  </React.Fragment>
+);
+
+/*
+⚛️ 3. COMPONENTS
+*/
+// Components reusable UI pieces hote hain
+// Do types ke components hote hain: Functional aur Class
+
+// Functional Component (Modern way)
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
+// Arrow Function Component
+const Welcome = (props) => {
+  return <h1>Hello, {props.name}</h1>;
+};
+
+// Class Component (Old way, ab kam use hota hai)
+class WelcomeClass extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+}
+
+/*
+🔧 4. PROPS (PROPERTIES)
+*/
+// Props components ko data pass karne ka tarika hai
+// Props read-only hote hain (immutable)
+function User(props) {
+  return (
+    <div>
+      <h1>{props.name}</h1>
+      <p>Age: {props.age}</p>
+      <p>City: {props.city}</p>
+    </div>
+  );
+}
+// Usage: <User name="John" age={25} city="Delhi" />
+
+/*
+🎪 5. STATE - useState HOOK
+*/
+// State component ka internal data hota hai
+// State change hone par component re-render hota hai
+import { useState } from 'react';
+
+function Counter() {
+  const [count, setCount] = useState(0); // useState hook
+  
+  const increment = () => {
+    setCount(count + 1); // State update karna
+  };
+  
+  const decrement = () => {
+    setCount(count - 1);
+  };
+  
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={increment}>Increment</button>
+      <button onClick={decrement}>Decrement</button>
+    </div>
+  );
+}
+
+/*
+⚡ 6. EVENT HANDLING
+*/
+// React events synthetic events hote hain
+// Events camelCase mein likhte hain (onClick, onChange)
+function Form() {
+  const [inputValue, setInputValue] = useState('');
+  
+  const handleClick = () => {
+    alert('Button clicked!');
+  };
+  
+  const handleChange = (event) => {
+    setInputValue(event.target.value);
+  };
+  
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log('Form submitted:', inputValue);
+  };
+  
+  return (
+    <form onSubmit={handleSubmit}>
+      <input 
+        type="text" 
+        value={inputValue}
+        onChange={handleChange}
+        placeholder="Enter text"
+      />
+      <button type="submit" onClick={handleClick}>
+        Submit
+      </button>
+    </form>
+  );
+}
+
+/*
+🔄 7. CONDITIONAL RENDERING
+*/
+// Condition ke according different content show karna
+function Greeting({ isLoggedIn, username }) {
+  return (
+    <div>
+      {isLoggedIn ? (
+        <h1>Welcome back, {username}!</h1>
+      ) : (
+        <h1>Please log in to continue</h1>
+      )}
+      
+      {/* Short circuit operator se conditional rendering */}
+      {isLoggedIn && <p>You have new notifications!</p>}
+    </div>
+  );
+}
+
+/*
+📋 8. LIST RENDERING
+*/
+// Arrays ko list of elements mein render karna
+function TodoList() {
+  const [todos, setTodos] = useState([
+    { id: 1, text: 'Learn React', completed: false },
+    { id: 2, text: 'Build Project', completed: true },
+    { id: 3, text: 'Get Job', completed: false }
+  ]);
+  
+  return (
+    <ul>
+      {todos.map((todo) => (
+        <li key={todo.id}>
+          <span style={{ 
+            textDecoration: todo.completed ? 'line-through' : 'none' 
+          }}>
+            {todo.text}
+          </span>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+/*
+🎣 9. useEffect HOOK
+*/
+// Side effects handle karne ke liye (API calls, subscriptions, etc.)
+import { useState, useEffect } from 'react';
+
+function UserProfile({ userId }) {
+  const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
+  
+  // Component mount hone par chalega
+  useEffect(() => {
+    fetchUserData();
+  }, []); // Empty dependency array = only run on mount
+  
+  // userId change hone par chalega
+  useEffect(() => {
+    if (userId) {
+      fetchUserData();
+    }
+  }, [userId]); // Dependency array mein userId
+  
+  // Cleanup function ke saath useEffect
+  useEffect(() => {
+    const timer = setInterval(() => {
+      console.log('Timer running');
+    }, 1000);
+    
+    return () => {
+      clearInterval(timer); // Cleanup on unmount
+    };
+  }, []);
+  
+  const fetchUserData = async () => {
+    setLoading(true);
+    // API call simulation
+    setTimeout(() => {
+      setUser({ name: 'John Doe', email: 'john@example.com' });
+      setLoading(false);
+    }, 1000);
+  };
+  
+  if (loading) return <div>Loading...</div>;
+  
+  return (
+    <div>
+      <h1>{user.name}</h1>
+      <p>{user.email}</p>
+    </div>
+  );
+}
+
+/*
+📦 10. CONTEXT API
+*/
+// Prop drilling se bachne ke liye (direct data pass karna)
+import { createContext, useContext, useState } from 'react';
+
+// Context create karna
+const ThemeContext = createContext();
+
+// Provider Component
+function App() {
+  const [theme, setTheme] = useState('light');
+  
+  const toggleTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  };
+  
+  return (
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      <div className={theme}>
+        <Header />
+        <Main />
+        <button onClick={toggleTheme}>
+          Toggle Theme
+        </button>
+      </div>
+    </ThemeContext.Provider>
+  );
+}
+
+// Consumer Component
+function Header() {
+  const { theme } = useContext(ThemeContext);
+  
+  return (
+    <header className={`header-${theme}`}>
+      <h1>My App Header</h1>
+      <p>Current Theme: {theme}</p>
+    </header>
+  );
+}
+
+function Main() {
+  const { theme } = useContext(ThemeContext);
+  
+  return (
+    <main className={`main-${theme}`}>
+      <p>This is main content with {theme} theme</p>
+    </main>
+  );
+}
+
+/*
+🚀 11. REACT ROUTER
+*/
+// Single Page Application ke liye routing
+import { BrowserRouter, Routes, Route, Link, useParams } from 'react-router-dom';
+
+function App() {
+  return (
+    <BrowserRouter>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/users">Users</Link>
+      </nav>
+      
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/users" element={<Users />} />
+        <Route path="/user/:id" element={<UserDetail />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+function Home() {
+  return <h1>Home Page</h1>;
+}
+
+function About() {
+  return <h1>About Page</h1>;
+}
+
+function Users() {
+  return <h1>Users List</h1>;
+}
+
+function UserDetail() {
+  const { id } = useParams(); // URL parameters access karna
+  return <h1>User ID: {id}</h1>;
+}
+
+/*
+🎣 12. OTHER IMPORTANT HOOKS
+*/
+import { useReducer, useRef, useMemo, useCallback } from 'react';
+
+// useReducer Hook - Complex state management ke liye
+function CounterReducer() {
+  const [state, dispatch] = useReducer(reducer, { count: 0 });
+  
+  function reducer(state, action) {
+    switch (action.type) {
+      case 'increment':
+        return { count: state.count + 1 };
+      case 'decrement':
+        return { count: state.count - 1 };
+      default:
+        return state;
+    }
+  }
+  
+  return (
+    <div>
+      Count: {state.count}
+      <button onClick={() => dispatch({ type: 'increment' })}>+</button>
+      <button onClick={() => dispatch({ type: 'decrement' })}>-</button>
+    </div>
+  );
+}
+
+// useRef Hook - DOM elements access karne ke liye
+function FocusInput() {
+  const inputRef = useRef(null);
+  
+  const focusInput = () => {
+    inputRef.current.focus();
+  };
+  
+  return (
+    <div>
+      <input ref={inputRef} type="text" />
+      <button onClick={focusInput}>Focus Input</button>
+    </div>
+  );
+}
+
+// useMemo Hook - Expensive calculations cache karne ke liye
+function ExpensiveCalculation({ number }) {
+  const calculatedValue = useMemo(() => {
+    console.log('Calculating...');
+    return number * 2; // Expensive calculation
+  }, [number]); // Only recalculate when number changes
+  
+  return <div>Result: {calculatedValue}</div>;
+}
+
+// useCallback Hook - Functions memoize karne ke liye
+function ParentComponent() {
+  const [count, setCount] = useState(0);
+  
+  const increment = useCallback(() => {
+    setCount(prev => prev + 1);
+  }, []); // Function recreate nahi hogi
+  
+  return <ChildComponent onIncrement={increment} />;
+}
+
+function ChildComponent({ onIncrement }) {
+  return <button onClick={onIncrement}>Increment</button>;
+}
+
+/*
+🔒 13. CUSTOM HOOKS
+*/
+// Apna khud ka hook banana
+function useLocalStorage(key, initialValue) {
+  const [value, setValue] = useState(() => {
+    try {
+      const item = window.localStorage.getItem(key);
+      return item ? JSON.parse(item) : initialValue;
+    } catch (error) {
+      return initialValue;
+    }
+  });
+  
+  const setStoredValue = (value) => {
+    try {
+      setValue(value);
+      window.localStorage.setItem(key, JSON.stringify(value));
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  
+  return [value, setStoredValue];
+}
+
+// Custom hook use karna
+function MyComponent() {
+  const [name, setName] = useLocalStorage('name', 'John');
+  
+  return (
+    <input 
+      value={name}
+      onChange={(e) => setName(e.target.value)}
+    />
+  );
+}
+
+/*
+⚡ 14. PERFORMANCE OPTIMIZATION
+*/
+// React.memo - Component memoization
+const ExpensiveComponent = React.memo(function MyComponent({ data }) {
+  // Component logic
+  return <div>{data}</div>;
+});
+
+// useMemo aur useCallback bhi performance ke liye important hain
+
+/*
+🔄 15. LIFECYCLE METHODS (Class Components)
+*/
+class LifecycleExample extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { count: 0 };
+  }
+  
+  componentDidMount() {
+    console.log('Component mounted');
+  }
+  
+  componentDidUpdate(prevProps, prevState) {
+    console.log('Component updated');
+  }
+  
+  componentWillUnmount() {
+    console.log('Component will unmount');
+  }
+  
+  render() {
+    return <div>Count: {this.state.count}</div>;
+  }
+}
+
+/*
+❌ 16. ERROR BOUNDARIES
+*/
+class ErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+  
+  static getDerivedStateFromError(error) {
+    return { hasError: true };
+  }
+  
+  componentDidCatch(error, errorInfo) {
+    console.log('Error:', error, errorInfo);
+  }
+  
+  render() {
+    if (this.state.hasError) {
+      return <h1>Something went wrong.</h1>;
+    }
+    
+    return this.props.children;
+  }
+}
+
+// Usage:
+{/* <ErrorBoundary>
+  <MyComponent />
+</ErrorBoundary> */}
+
+/*
+📝 17. INTERVIEW QUESTIONS WITH ANSWERS
+*/
+
+// Q: Virtual DOM kya hai?
+// A: Virtual DOM React ka representation hai actual DOM ka. 
+//    Yeh lightweight JavaScript object hai jo memory mein rehta hai.
+//    Jab state change hota hai, React naya Virtual DOM banata hai,
+//    phir purane aur naye Virtual DOM ko compare karta hai (diffing),
+//    aur sirf changed parts ko actual DOM mein update karta hai.
+
+// Q: Keys kyu important hain?
+// A: Keys React ko batate hain kaunse items change, add, ya remove hue hain.
+//    Yeh list items ko uniquely identify karte hain.
+//    Keys stable, unique, aur predictable hone chahiye.
+
+// Q: Controlled vs Uncontrolled Components?
+// A: Controlled: Form data React state se manage hota hai
+//    Uncontrolled: Form data DOM se directly manage hota hai (useRef se)
+
+// Controlled Component Example:
+function ControlledForm() {
+  const [value, setValue] = useState('');
+  
+  return (
+    <input 
+      value={value}
+      onChange={(e) => setValue(e.target.value)}
+    />
+  );
+}
+
+// Uncontrolled Component Example:
+function UncontrolledForm() {
+  const inputRef = useRef(null);
+  
+  const handleSubmit = () => {
+    console.log(inputRef.current.value);
+  };
+  
+  return (
+    <input 
+      ref={inputRef}
+      type="text"
+    />
+  );
+}
+
+// =============================================
+// END OF REACT.JS INTERVIEW GUIDE
+// =============================================
+
+
+
+
+
